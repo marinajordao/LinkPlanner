@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{08AC857F-8721-4497-8FD5-0A7499DD2EF5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>bb84qkd</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\..\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\sdf\bb84_with_discrete_variables</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\..\include;..\bb84_with_discrete_variables;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\maria\Documents\Repositorio\LinkPlanner\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\lib\alice_qkd_20180409.cpp" />
+    <ClCompile Include="..\..\lib\binary_mapper_20180205.cpp" />
+    <ClCompile Include="..\..\lib\binary_source_20180118.cpp" />
+    <ClCompile Include="..\..\lib\bit_decider_20170818.cpp" />
+    <ClCompile Include="..\..\lib\bit_error_rate_20171810.cpp" />
+    <ClCompile Include="..\..\lib\bobBB84_20180221.cpp" />
+    <ClCompile Include="..\..\lib\bob_qkd_20180409.cpp" />
+    <ClCompile Include="..\..\lib\clock_20171219.cpp" />
+    <ClCompile Include="..\..\lib\demux_1_2_20180205.cpp" />
+    <ClCompile Include="..\..\lib\coincidence_detector_20180206.cpp" />
+    <ClCompile Include="..\..\lib\discrete_to_continuous_time_20180118.cpp" />
+    <ClCompile Include="..\..\lib\eve_qkd.cpp" />
+    <ClCompile Include="..\..\lib\fork_20180112.cpp" />
+    <ClCompile Include="..\..\lib\message_processor_alice_20180205.cpp" />
+    <ClCompile Include="..\..\lib\message_processor_bob_20180221.cpp" />
+    <ClCompile Include="..\..\lib\m_qam_mapper_20180118.cpp" />
+    <ClCompile Include="..\..\lib\netxpto_20180118.cpp" />
+    <ClCompile Include="..\..\lib\optical_attenuator_20180304.cpp" />
+    <ClCompile Include="..\..\lib\SOP_modulator_20180319.cpp" />
+    <ClCompile Include="..\..\lib\polarization_beam_splitter_20180109.cpp" />
+    <ClCompile Include="..\..\lib\polarization_rotator_20180113.cpp" />
+    <ClCompile Include="..\..\lib\pulse_shaper_20180111.cpp" />
+    <ClCompile Include="..\..\lib\sampler_20171119.cpp" />
+    <ClCompile Include="..\..\lib\single_photon_detector_20180206.cpp" />
+    <ClCompile Include="..\..\lib\single_photon_receiver_20180303.cpp" />
+    <ClCompile Include="..\..\lib\single_photon_source_20171218.cpp" />
+    <ClCompile Include="..\..\lib\sink_20180118.cpp" />
+    <ClCompile Include="..\..\lib\super_block_interface_20180118.cpp" />
+    <ClCompile Include="bb84_with_discrete_variables_sdf.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\alice_qkd_20180409.h" />
+    <ClInclude Include="..\..\include\binary_mapper_20180205.h" />
+    <ClInclude Include="..\..\include\binary_source_20180118.h" />
+    <ClInclude Include="..\..\include\bit_decider_20170818.h" />
+    <ClInclude Include="..\..\include\bit_error_rate_20171810.h" />
+    <ClInclude Include="..\..\include\bobBB84_20180221.h" />
+    <ClInclude Include="..\..\include\bob_qkd_20180409.h" />
+    <ClInclude Include="..\..\include\clock_20171219.h" />
+    <ClInclude Include="..\..\include\demux_1_2_20180205.h" />
+    <ClInclude Include="..\..\include\coincidence_detector_20180206.h" />
+    <ClInclude Include="..\..\include\discrete_to_continuous_time_20180118.h" />
+    <ClInclude Include="..\..\include\eve_qkd.h" />
+    <ClInclude Include="..\..\include\fork_20180112.h" />
+    <ClInclude Include="..\..\include\message_processor_alice_20180205.h" />
+    <ClInclude Include="..\..\include\message_processor_bob_20180221.h" />
+    <ClInclude Include="..\..\include\m_qam_mapper_20180118.h" />
+    <ClInclude Include="..\..\include\netxpto_20180118.h" />
+    <ClInclude Include="..\..\include\optical_attenuator_20180304.h" />
+    <ClInclude Include="..\..\include\SOP_modulator_20180319.h" />
+    <ClInclude Include="..\..\include\polarization_beam_splitter_20180109.h" />
+    <ClInclude Include="..\..\include\polarization_rotator_20180113.h" />
+    <ClInclude Include="..\..\include\pulse_shaper_20180111.h" />
+    <ClInclude Include="..\..\include\sampler_20171119.h" />
+    <ClInclude Include="..\..\include\single_photon_detector_20180206.h" />
+    <ClInclude Include="..\..\include\single_photon_receiver_20180303.h" />
+    <ClInclude Include="..\..\include\single_photon_source_20171218.h" />
+    <ClInclude Include="..\..\include\sink_20180118.h" />
+    <ClInclude Include="..\..\include\super_block_interface_20180118.h" />
+    <ClInclude Include="bb84_with_discrete_variables_sdf.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
